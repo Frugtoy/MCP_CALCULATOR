@@ -29,7 +29,7 @@ def sub(l_value:float, r_value:float) ->str:
     Returns:
         результат разности в str формате
     """
-    return f"{l_value - l_value}"
+    return f"{l_value - r_value}"
 
 @server.tool()
 def mult(l_value:float, r_value:float) ->str:
