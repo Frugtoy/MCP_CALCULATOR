@@ -132,7 +132,7 @@ class MCPClient:
             await self._streams_context.__aexit__(None, None, None)  # pylint: disable=E1101
 
 
-async def main():
+async def run_console_chat_client():
     """
     Главная функция для запуска клиента MCP.
     """
@@ -151,7 +151,3 @@ async def main():
         await client.chat_loop()
     finally:
         await client.cleanup()
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
